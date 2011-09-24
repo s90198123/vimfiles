@@ -152,3 +152,6 @@
 [submodule "bundle/vim-rvm"]
 	path = bundle/vim-rvm
 	url = git://github.com/tpope/vim-rvm.git
+[submodule "bundle/vjde"]
+	path = bundle/vjde
+	url = https://github.com/cespare/vjde.git
