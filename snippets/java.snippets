@@ -141,9 +141,9 @@ snippet debug
 snippet error
 	Logger.error(${1:param});${2}
 snippet findall
-	List<${1:listName}> ${2:items} = ${1}.findAll();${3}
+	List<${1:type}> ${3:items} = ${2:type}.findAll();${4}
 snippet findbyid
-	${1:var} ${2:item} = ${1}.findById(${3});${4}
+	${1:type} ${3:item} = ${2:type}.findById(${4});${5}
 snippet info
 	Logger.info(${1:param});${2}
 snippet rnf
