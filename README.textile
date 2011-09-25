@@ -199,6 +199,10 @@ git submodule add [GIT-REPOSITORY-URL] bundle/[PLUGIN-NAME]
 
 reference "vgod's vimrc":https://github.com/vgod/vimrc
 
+h2. Auto-Completion
+
+HTML, Javascript, CSS, Java: use [TAB] to do omni-completion.
+
 h2. Learn Vim
 
 Visit the following sites to learn more about Vim:
