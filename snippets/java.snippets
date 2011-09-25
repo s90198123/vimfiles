@@ -96,10 +96,29 @@ snippet m
 	import play.data.validation.*;
 
 	@Entity
-	public class ${1:You} extends Model {
+	public class ${1:`Filename("", "untitled")`} extends Model {
 	    ${2:public String name;}
 	}
+snippet c
+	package controllers;
 
+	import play.*;
+	import play.mvc.*;
+	import play.data.validation.*;
+
+	import java.util.*;
+
+	import models.*;
+
+	public class ${1:`Filename("", "untitled")`} extends Controller {
+
+	    public static void index() {
+		render();
+	    }
+	}
+snippet ws
+	@With(Secure.class)
+	${1}
 snippet mm
 	@ManyToMany
 	${1}
