@@ -213,7 +213,12 @@ h3. How can i create a snippets?
 
 there is two way to create.
 
-1. ~/.vim/snippets/{filetype}/{shortcut}.snippet - first, find or create the directory naming by file type in ~/.vim/snippets (ex. ~/.vim/snippets/html), second, create the snippets naming by shortcut name (ex. ~/.vim/snippets/html/div.snippet), finally, put the snippet text in here. (ex. <div id="${1: default}">${2}</div>)
+1. ~/.vim/snippets/{filetype}/{shortcut}.snippet - first, find or create the directory naming by file type in ~/.vim/snippets (ex. ~/.vim/snippets/html), second, create the snippets naming by shortcut name (ex. ~/.vim/snippets/html/div.snippet), finally, put the snippet text in here.
+<pre>
+<code>
+<div id="${1: default}">${2}</div>
+</code>
+</pre>
 
 2. ~/.vim/snippets/{filetype}.snippets - put the snippet text in this file, the syntax like
 
