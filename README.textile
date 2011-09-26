@@ -237,6 +237,47 @@ h2. Auto-Completion
 
 HTML, Javascript, CSS, Java: use [TAB] to do omni-completion.
 
+h2. Play! Framework Support
+
+type [TAB]<m> will gen
+
+<pre><code>
+  package models;
+
+  import java.util.*;
+	import javax.persistence.*;
+
+	import play.db.jpa.*;
+	import play.data.validation.*;
+
+	@Entity
+	public class ${1:`Filename("", "untitled")`} extends Model {
+	    ${2:public String name;}
+	}
+</code></pre>
+
+type [TAB]<c> will gen
+
+package controllers;
+<pre><code>
+  import play.*;
+	import play.mvc.*;
+	import play.data.validation.*;
+
+	import java.util.*;
+
+	import models.*;
+
+	public class ${1:`Filename("", "untitled")`} extends Controller {
+
+	    public static void index() {
+		render();
+	    }
+	}
+</code></pre>
+
+more info in ~/.vim/snippets/java.snippets , ~/.vim/snippets/html.snippets
+
 h2. Learn Vim
 
 Visit the following sites to learn more about Vim:
