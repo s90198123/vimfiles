@@ -239,7 +239,7 @@ HTML, Javascript, CSS, Java: use [TAB] to do omni-completion.
 
 h2. Play! Framework Support
 
-type [TAB]<m> will gen
+type [m][TAB] will gen
 
 <pre><code>
   package models;
@@ -256,7 +256,7 @@ type [TAB]<m> will gen
 	}
 </code></pre>
 
-type [TAB]<c> will gen
+type [c][TAB] will gen
 
 package controllers;
 <pre><code>
