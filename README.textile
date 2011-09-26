@@ -188,16 +188,45 @@ All plugins were checked out as git submodules, which can be upgraded with git p
 <pre><code>
 cd ~/.vim/bundle/command-t
 git pull
-</pre></code>
+</code></pre>
 
 To install a new plugin as a git submoudle, type the followin commands.
 
 <pre><code>
 cd ~/.vim
 git submodule add [GIT-REPOSITORY-URL] bundle/[PLUGIN-NAME]
-</pre></code>
+</code></pre>
 
 reference "vgod's vimrc":https://github.com/vgod/vimrc
+
+h2. Add Snippets
+
+h3. Where is the snippets?
+
+<pre>
+  <code>
+    ~/.vim/snippets
+  </code>
+</pre>
+
+h3. How can i create a snippets?
+
+there is two way to create.
+
+1. ~/.vim/snippets/{filetype}/{shortcut}.snippet - first, find or create the directory naming by file type in ~/.vim/snippets (ex. ~/.vim/snippets/html), second, create the snippets naming by shortcut name (ex. ~/.vim/snippets/html/div.snippet), finally, put the snippet text in here. (ex. <div id="${1: default}">${2}</div>)
+
+2. ~/.vim/snippets/{filetype}.snippets - put the snippet text in this file, the syntax like
+
+<pre>
+  <code>
+    snippet div
+        <div id="${1: default}">
+            ${2}
+        </div>
+  </code>
+</pre>
+
+you can reference more in ~/.vim/snippets/
 
 h2. Auto-Completion
 
