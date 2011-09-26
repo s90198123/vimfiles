@@ -239,41 +239,43 @@ HTML, Javascript, CSS, Java: use [TAB] to do omni-completion.
 
 h2. Play! Framework Support
 
-type [m][TAB] will gen
+type <code>m tab</code> will generate model
 
 <pre><code>
-  package models;
+package models;
 
-  import java.util.*;
-	import javax.persistence.*;
+import java.util.*;
+import javax.persistence.*;
 
-	import play.db.jpa.*;
-	import play.data.validation.*;
+import play.db.jpa.*;
+import play.data.validation.*;
 
-	@Entity
-	public class ${1:`Filename("", "untitled")`} extends Model {
-	    ${2:public String name;}
-	}
+@Entity
+public class User extends Model {
+    public String name;
+}
 </code></pre>
 
-type [c][TAB] will gen
+type <code>c tab</code> will generate controller
 
-package controllers;
+
 <pre><code>
-  import play.*;
-	import play.mvc.*;
-	import play.data.validation.*;
+package controllers;
 
-	import java.util.*;
+import play.*;
+import play.mvc.*;
+import play.data.validation.*;
 
-	import models.*;
+import java.util.*;
 
-	public class ${1:`Filename("", "untitled")`} extends Controller {
+import models.*;
 
-	    public static void index() {
-		render();
-	    }
-	}
+public class Users extends Controller {
+
+    public static void index() {
+	render();
+    }
+}
 </code></pre>
 
 more info in ~/.vim/snippets/java.snippets , ~/.vim/snippets/html.snippets
