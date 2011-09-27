@@ -116,6 +116,27 @@ snippet c
 		render();
 	    }
 	}
+snippet bs
+	@PrePersist
+snippet bsdef
+	@PrePersist
+	void ${1: onPrePersist}() {
+	  ${2}
+	}
+snippet as
+	@PostPersist
+snippet asdef
+	@PostPersist
+	void ${1: onPostPersist}(){
+	  ${2}
+	}
+snippet bu
+	@PreUpdate
+snippet budef
+	@PreUpdate
+	void ${1: PreUpdate}(){
+	  ${2}
+	}
 snippet ws
 	@With(Secure.class)
 	${1}
@@ -144,6 +165,8 @@ snippet findall
 	List<${1:type}> ${3:items} = ${2:type}.findAll();${4}
 snippet findbyid
 	${1:type} ${3:item} = ${2:type}.findById(${4});${5}
+snippet findfirst
+	${1:type} ${3:item} = ${2:type}.find(${4}).first();${5}
 snippet info
 	Logger.info(${1:param});${2}
 snippet rnf
