@@ -227,6 +227,8 @@ snippet %
 	%{${1:script}}%${2}
 snippet *
 	*{ ${1:comment} }*${2}
+snippet &
+        &{${1:comment}}${2}
 snippet em
 	<em>${1:text}</em>${2}
 snippet li
@@ -251,6 +253,36 @@ snippet uli
 	</ul>
 snippet @
 	@{${1:action}}${2}
+snippet field
+        #{field 'user.name'}
+        <p>
+            <label for="${field.id}">&{field.name}</label>
+            <input type="text" id="${field.id}" name="${field.name}" value="${field.value}" class="${field.errorClass}">
+            <span class="error">${field.error}</span>
+        </p>
+        #{/field}
+snippet st
+        #{selenium 'Test security'}   
+ 
+	clearSession()
+        open('/admins/login')
+        assertTextPresent('Login')
+    
+        // by name and value 
+        type('account', 'admin')
+        type('password', 'secret')
+    
+        clickAndWait('auth')
+        // click('auth')
+        // clickAndWait('submit', '3000')
+
+        // by xpath and text
+        assertText('//h1', 'welcome')
+    
+        // by id and text, Verify that the user in correctly logged in
+        assertText('success', 'Welcom admin!') 
+     
+        #{/selenium}
 #====================================================================
 #  End of Play framework's snippets session
 #====================================================================
