@@ -30,6 +30,7 @@ h1. Bundled Plugins
 * "textile":http://www.vim.org/scripts/script.php?script_id=2305 - syntax highlight for Textile
 * "vim-bundler":https://github.com/tpope/vim-bundler - Bundler support for Vim
 * "vim-coffee-script":https://github.com/kchmck/vim-coffee-script - syntax highlight for Coffee Script
+* "vim-easymotion":http://www.vim.org/scripts/script.php?script_id=3526 - Vim motions on speed! 
 * "vim-jade":https://github.com/statianzo/vim-jade - Vim syntax highlighting for the Jade templating engine
 * "vim-jquery":https://github.com/itspriddle/vim-jquery - Vim syntax file to add some colorations for jQuery keywords and css selectors
 * "vim-preview":http://www.vim.org/scripts/script.php?script_id=3344 - [leader] P previews Markdown, Rdoc, Textile, html. Requires Ruby and other gems.
