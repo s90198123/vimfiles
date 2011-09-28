@@ -120,6 +120,31 @@ snippet c
 		render();
 	    }
 	}
+snippet j
+        package jobs;
+
+        import play.*;
+        import play.jobs.*;
+
+        import models.*;
+
+        @OnApplicationStart
+        public class Bootstrap extends Job {
+
+            @Override
+            public void doJob() {
+
+            }
+        }
+snippet jo
+        @On("0 0 12 * * ?")
+snippet mc
+        @Column(name="fk", columnDefinition="bigint default '9223372036854775807'")
+snippet cb
+        @Before(only={"login","logout"})
+        static void checkAuthentification() {
+            if(session.get("user") == null) login();
+        }
 snippet bs
 	@PrePersist
 snippet bsdef
@@ -144,6 +169,79 @@ snippet budef
 snippet ws
 	@With(Secure.class)
 	${1}
+snippet ft
+        import play.test.*;
+        import play.mvc.*;
+        import play.mvc.Http.*;
+        import org.junit.*;
+ 
+        public class ApplicationTest extends FunctionalTest {
+     
+            @Test
+            public void testTheHomePage() {
+                Response response = GET("/");
+                assertStatus(200, response);
+            }
+     
+        }
+snippet ut
+        import org.junit.*;
+
+        import java.util.*;
+        import play.test.*;
+        import models.*;
+
+        public class ClassTest extends UnitTest {
+	    /**
+             * <p>
+	     * Given , <br>
+             * When i add 1, <br>
+             * Then it should return 2, <br>
+             * </p>
+             */
+	    @Test
+	    public void testSomeMethod() {
+		// Given
+                final int i = 1;
+                // When
+                final int result = i + 1;
+                // Then
+		assertEquals(result, 2);
+	    }
+        }
+snippet uta
+        @After
+        public final void tearDown() {
+    	
+        }
+snippet utb
+        @Before
+        public final void setUp() {
+        
+        }
+snippet utm
+        /**
+         * <p>
+	 * Given , <br>
+         * When , <br>
+         * Then , <br>
+         * </p>
+         */
+	@Test
+	public void testSomeMethod() {
+	    // Given
+            final int i = 1;
+            // When
+            final int result = i + 1;
+            // Then
+	    assertEquals(result, 2);
+	}
+snippet confget
+        Play.configuration.get(${1: ""});
+snippet isdev
+        Play.mode.isDev()
+snippet ms
+        @MappedSuperclass
 snippet mm
 	@ManyToMany
 	${1}
