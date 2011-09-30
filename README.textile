@@ -286,10 +286,26 @@ h2. Learn Vim
 
 Visit the following sites to learn more about Vim:
 
-* http://vimcasts.org
+* "Vimcasts":http://vimcasts.org
+
+* "Learn Vim Progressively":http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/
+
+* "Learn Vim Progressively for CN":http://coolshell.cn/articles/5426.html
+
+* "Search and replace for CN":http://greenisland.csie.nctu.edu.tw/wp/2005/09/02/302/
+
+h2. Vim cheat sheet
+
+"http://blog.vgod.tw/2009/12/08/vim-cheat-sheet-for-programmers/":http://blog.vgod.tw/2009/12/08/vim-cheat-sheet-for-programmers/
 
 There are many sites teaching Vim, if you know of any other that are easy
 to follow for newcomers, let me know.
+
+h2. TODO
+
+"https://github.com/carlhuda/janus":https://github.com/carlhuda/janus
+
+"https://github.com/vgod/vimrc":https://github.com/vgod/vimrc
 
 h2. Credits
 
