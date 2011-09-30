@@ -423,3 +423,5 @@ let g:user_zen_settings = {
 " --- SuperTab
 let g:SuperTabDefaultCompletionType = "context"
 
+" --- javacomplete
+setlocal omnifunc=javacomplete#Complete
