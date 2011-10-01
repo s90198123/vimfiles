@@ -294,12 +294,14 @@ Visit the following sites to learn more about Vim:
 
 * "Search and replace for CN":http://greenisland.csie.nctu.edu.tw/wp/2005/09/02/302/
 
-h2. Vim cheat sheet
+There are many sites teaching Vim, if you know of any other that are easy
+to follow for newcomers, let me know.
+
+h2. Cheat Sheet
 
 "http://blog.vgod.tw/2009/12/08/vim-cheat-sheet-for-programmers/":http://blog.vgod.tw/2009/12/08/vim-cheat-sheet-for-programmers/
 
-There are many sites teaching Vim, if you know of any other that are easy
-to follow for newcomers, let me know.
+"http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html":http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
 
 h2. TODO
 
