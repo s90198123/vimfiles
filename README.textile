@@ -282,6 +282,12 @@ public class Users extends Controller {
 
 more info in ~/.vim/snippets/java.snippets , ~/.vim/snippets/html.snippets
 
+h2. Customize Vim leader key
+
+set leader key from <code>\</code> to <code>,</code>
+
+Warning: plugin.bufexplorer couldn't use now...
+
 h2. Learn Vim
 
 Visit the following sites to learn more about Vim:
