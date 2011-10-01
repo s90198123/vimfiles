@@ -226,14 +226,14 @@ if has("gui_running")
     "tell the term has 256 colors
     set t_Co=256
 
-    colorscheme railscasts
+    colorscheme wombat256
     set guitablabel=%M%t
     set lines=40
     set columns=115
 
     if has("gui_gnome")
         set term=gnome-256color
-        colorscheme railscasts
+        colorscheme wombat256
         set guifont=Monospace\ Bold\ 10
     endif
 
