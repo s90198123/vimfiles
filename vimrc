@@ -2,11 +2,34 @@
 let g:CSApprox_verbose_level = 0
 
 "necessary on some Linux distros for pathogen to properly load bundles
-filetype on
+filetype on " Enable filetype detection
 filetype off
+
+filetype plugin on " Enable filetype-specific plugins
+filetype indent on " Enable filetype-specific indenting
+
+"turn on syntax highlighting
+syntax on
 
 "load pathogen managed plugins
 call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+" auto reload vimrc when editing it
+autocmd! bufwritepost .vimrc source ~/.vimrc
+
+"---------------------------------------------------------------------------
+" PROGRAMMING SHORTCUTS
+"---------------------------------------------------------------------------
+"
+
+" use syntax complete if nothing else available
+if has("autocmd") && exists("+omnifunc")
+   autocmd Filetype *
+              \ if &omnifunc == "" |
+              \ setlocal omnifunc=syntaxcomplete#Complete |
+              \ endif
+endif
 
 "Use Vim settings, rather then Vi settings (much better!).
 "This must be first, because it changes other options as a side effect.
@@ -21,8 +44,11 @@ set history=1000
 set showcmd     "show incomplete cmds down the bottom
 set showmode    "show current mode down the bottom
 
+" Search"
 set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
+set ignorecase
+set smartcase
 
 set number      "add line numbers
 set showbreak=...
@@ -181,7 +207,10 @@ endfunction
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+set smarttab      " insert tabs on the start of a line according to context"
 set autoindent
+set si            "Smart indet
+
 
 "folding settings
 set foldmethod=indent   "fold based on indent
@@ -204,13 +233,6 @@ set scrolloff=3
 set sidescrolloff=7
 set sidescroll=1
 
-"load ftplugins and indent files
-filetype plugin on
-filetype indent on
-
-"turn on syntax highlighting
-syntax on
-
 "some stuff to get the mouse going in term
 set mouse=a
 set ttymouse=xterm2
@@ -222,18 +244,25 @@ set hidden
 let g:CommandTMaxHeight=10
 let g:CommandTMatchWindowAtTop=1
 
+" set leader to ,"
+let mapleader=","
+let g:mapleader=","
+" ,/ turn off search highlighting
+nmap <leader>/ :nohl<CR>"
+
+" Color scheme, term color and font setting
+    " global setting
+    set t_Co=256
+    colorscheme wombat256
+    set cursorline        " highlight current line"
 if has("gui_running")
     "tell the term has 256 colors
-    set t_Co=256
-
-    colorscheme wombat256
     set guitablabel=%M%t
     set lines=40
     set columns=115
 
     if has("gui_gnome")
         set term=gnome-256color
-        colorscheme wombat256
         set guifont=Monospace\ Bold\ 10
     endif
 
@@ -251,11 +280,9 @@ if has("gui_running")
         set enc=utf-8
     endif
 else
-    set t_Co=256
     "dont load csapprox if there is no gui support - silences an annoying warning
     let g:CSApprox_loaded = 1
 
-    colorscheme wombat256
     "set railscasts colorscheme when running vim in gnome terminal
     "if $COLORTERM == 'gnome-terminal'
     "    set term=gnome-256color
