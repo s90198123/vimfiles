@@ -157,3 +157,6 @@
 [submodule "bundle/javacomplete"]
 	path = bundle/javacomplete
 	url = https://github.com/vim-scripts/javacomplete.git
+[submodule "bundle/actionscript"]
+	path = bundle/actionscript
+	url = git://github.com/endel/actionscript.vim.git
