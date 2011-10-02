@@ -201,6 +201,19 @@ git submodule add [GIT-REPOSITORY-URL] bundle/[PLUGIN-NAME]
 
 reference "vgod's vimrc":https://github.com/vgod/vimrc
 
+h2. Customize Vim leader key
+
+set leader key from <code>\</code> to <code>,</code>
+
+h2. Make Function Key more convenient
+
+<code><F5></code>:NERDTREE
+<code><F6></code>:BufExplorer
+<code><F7></code>:buffernext (origin: <code><leader>bn</code>)
+<code><F8></code>:bufferprev (origin: <code><leader>bp</code>)
+<code><F9></code>:YRShow
+<code><F10></code>:YRSearch
+
 h2. Add Snippets
 
 h3. Where is the snippets?
@@ -229,15 +242,21 @@ snippet div
 
 you can reference more in ~/.vim/snippets/
 
-h2. Omni-Completion
+h2. Completion
+
+h3. File Completion
+
+use <code><C-f></code> to do file-completion (origin is <code><C-x><C-f></code>)
+
+h3. Omni Completion
 
 HTML, Javascript, CSS: use <code><tab></code> to do omni-completion. (see next for java)
 
-h2. Java-Completion Support
+h3. Java-Completion Support
 
-use <code><tab></code> to do auto completion. (only java-base api, by plugin/vjde)
+use <code><tab></code> to do keyword / auto completion. (only java-base api, by plugin/vjde)
 
-use <code><C-x><C-o></code> to do omni-completion. (by plugin/javacomplete)
+use <code><C-o></code> to do omni completion. (by plugin/javacomplete, origin is <code><C-x><C-o></code>)
 
 h2. Play! Framework Support
 
@@ -281,12 +300,6 @@ public class Users extends Controller {
 </code></pre>
 
 more info in ~/.vim/snippets/java.snippets , ~/.vim/snippets/html.snippets
-
-h2. Customize Vim leader key
-
-set leader key from <code>\</code> to <code>,</code>
-
-Warning: plugin.bufexplorer couldn't use now...
 
 h2. Learn Vim
 
