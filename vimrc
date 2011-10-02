@@ -18,18 +18,21 @@ call pathogen#helptags()
 " auto reload vimrc when editing it
 autocmd! bufwritepost .vimrc source ~/.vimrc
 
+" --- javacomplete
+setlocal omnifunc=javacomplete#Complete
+
 "---------------------------------------------------------------------------
 " PROGRAMMING SHORTCUTS
 "---------------------------------------------------------------------------
 "
 
 " use syntax complete if nothing else available
-if has("autocmd") && exists("+omnifunc")
-   autocmd Filetype *
-              \ if &omnifunc == "" |
-              \ setlocal omnifunc=syntaxcomplete#Complete |
-              \ endif
-endif
+""if has("autocmd") && exists("+omnifunc")
+""   autocmd Filetype *
+""              \ if &omnifunc == "" |
+""              \ setlocal omnifunc=syntaxcomplete#Complete |
+""              \ endif
+""endif
 
 "Use Vim settings, rather then Vi settings (much better!).
 "This must be first, because it changes other options as a side effect.
@@ -247,6 +250,7 @@ let g:CommandTMatchWindowAtTop=1
 " set leader to ,"
 let mapleader=","
 let g:mapleader=","
+
 " ,/ turn off search highlighting
 nmap <leader>/ :nohl<CR>"
 
@@ -303,8 +307,6 @@ nnoremap <silent> <C-f> :call FindInNERDTree()<CR>
 nnoremap <C-L> :nohls<CR><C-L>
 inoremap <C-L> <C-O>:nohls<CR>
 
-"map to bufexplorer
-nnoremap <leader>b :BufExplorer<cr>
 
 "map to CommandT TextMate style finder
 nnoremap <leader>t :CommandT<CR>
@@ -329,8 +331,6 @@ map <A-q> :cclose<CR>
 map <A-j> :cnext<CR>
 map <A-k> :cprevious<CR>
 
-"key mapping for Gundo
-nnoremap <F4> :GundoToggle<CR>
 
 "snipmate setup
 try
@@ -418,6 +418,31 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" auto completion
+inoremap <C-]>             <C-X><C-]>
+inoremap <C-F>             <C-X><C-F>
+inoremap <C-D>             <C-X><C-D>
+inoremap <C-L>             <C-X><C-L>
+inoremap <C-O>             <C-X><C-O>
+
+" Gundo
+nnoremap <F4> :GundoToggle<CR>
+
+" NERDTree
+nnoremap <silent> <F5> :NERDTree<CR>
+
+" Bufexplorer
+nnoremap <silent> <F6> :BufExplorerHorizontalSplit<cr>
+map <silent> <F7> :bn<cr>
+map <silent> <F8> :bp<cr>
+""nnoremap <silent> <F6> :BufExplorer<cr>
+""nnoremap <silent> <F7> :BufExplorerHorizontalSplit<cr>
+""nnoremap <silent> <F8> :BufExplorerVerticalSplit<cr>
+
+" YankRing
+nnoremap <silent> <F9> :YRShow<cr>
+nnoremap <silent> <F10> :YRSearch<cr>
+
 "key mapping for saving file
 nmap <C-s> :w<CR>
 
@@ -449,8 +474,9 @@ let g:user_zen_settings = {
   \    'extends' : 'html',
   \  },
  \}
+
 " --- SuperTab
+""let g:SuperTabRetainCompletionType = 2
+""let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 let g:SuperTabDefaultCompletionType = "context"
 
-" --- javacomplete
-setlocal omnifunc=javacomplete#Complete
