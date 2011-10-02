@@ -29,6 +29,7 @@ h1. Bundled Plugins
 * "surround":http://www.vim.org/scripts/script.php?script_id=1697 - add, change, remove surrounding parentheses, brackets, quotes, etc
 * "syntastic":http://www.vim.org/scripts/script.php?script_id=2736 - checks for syntax errors in many languages
 * "textile":http://www.vim.org/scripts/script.php?script_id=2305 - syntax highlight for Textile
+* "yankring":https://github.com/vim-scripts/YankRing.vim - Maintains a history of previous yanks, changes and deletes
 * "vim-bundler":https://github.com/tpope/vim-bundler - Bundler support for Vim
 * "vim-coffee-script":https://github.com/kchmck/vim-coffee-script - syntax highlight for Coffee Script
 * "vim-easymotion":http://www.vim.org/scripts/script.php?script_id=3526 - Vim motions on speed! 
