@@ -160,3 +160,9 @@
 [submodule "bundle/actionscript"]
 	path = bundle/actionscript
 	url = git://github.com/endel/actionscript.vim.git
+[submodule "bundle/autojump"]
+	path = bundle/autojump
+	url = https://github.com/joelthelion/autojump.git
+[submodule "bundle/autojump.vim"]
+	path = bundle/autojump.vim
+	url = https://github.com/trotter/autojump.vim.git
