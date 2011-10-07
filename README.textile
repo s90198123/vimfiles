@@ -10,6 +10,7 @@ h1. Bundled Plugins
 
 * "Ack":http://www.vim.org/scripts/script.php?script_id=2572 - type :Ack [search pattern] to search your entire project
 * "Align":http://www.vim.org/scripts/script.php?script_id=294 - align blocks of text using equal sign, make comment boxes and more
+* "AutoJump":https://github.com/trotter/autojump.vim - Adds autojump support to vim
 * "bufexplorer":http://www.vim.org/scripts/script.php?script_id=42 - manage your file buffers
 * "Command-T":http://www.vim.org/scripts/script.php?script_id=3025 - the fastest and most intuitive way for opening files in your project
 * "cucumber":http://www.vim.org/scripts/script.php?script_id=2973 - support for cucumber features such as syntax highlight, indentation, etc
@@ -98,7 +99,7 @@ source ~/vimfiles/gvimrc
 This way you can override the default GUI configuration by adding your own inside
 this file.
 
-h2. Help Tags
+h1. Help Tags
 
 At first usage of vim, type ":" while in command mode and execute:
 
@@ -106,7 +107,7 @@ At first usage of vim, type ":" while in command mode and execute:
 
 This will make the plugins documentations available upon :help
 
-h2. Dependencies
+h1. Dependencies
 
 You will need these dependencies figured out:
 
@@ -184,7 +185,13 @@ sudo make install
 More details can be found "here":http://kresimirbojcic.com/2011/05/14/installing-command-t-ubunutu-11.04-ruby-1.9.2.html
 Note that the options '--with-features=huge --enable-gui=gnome2' are not mentioned on the post above but they are necessary to also update the graphical version of vim (gvim).
 
-h2. INSTALL & UPGRADE PLUGIN BUNDLES
+h1. IMPORTANT: Autojump.vim
+
+see "https://github.com/joelthelion/autojump/wiki":https://github.com/joelthelion/autojump/wiki to install native support,
+
+and see "https://github.com/trotter/autojump.vim":https://github.com/trotter/autojump.vim to install in vim
+
+h1. INSTALL & UPGRADE PLUGIN BUNDLES
 
 All plugins were checked out as git submodules, which can be upgraded with git pull. For example, to upgrade Command-T
 
@@ -202,11 +209,11 @@ git submodule add [GIT-REPOSITORY-URL] bundle/[PLUGIN-NAME]
 
 reference "vgod's vimrc":https://github.com/vgod/vimrc
 
-h2. Customize Vim leader key
+h1. Customize Vim leader key
 
 set leader key from <code>\</code> to <code>,</code>
 
-h2. Make Function Key more convenient
+h1. Make Function Key more convenient
 
 <code><F5></code>:NERDTREE
 <code><F6></code>:BufExplorer
@@ -215,15 +222,15 @@ h2. Make Function Key more convenient
 <code><F9></code>:YRShow
 <code><F10></code>:YRSearch
 
-h2. Add Snippets
+h1. Add Snippets
 
-h3. Where is the snippets?
+h2. Where is the snippets?
 
 <pre><code>
 ~/.vim/snippets
 </code></pre>
 
-h3. How can i create a snippets?
+h2. How can i create a snippets?
 
 there is two way to create.
 
@@ -243,23 +250,23 @@ snippet div
 
 you can reference more in ~/.vim/snippets/
 
-h2. Completion
+h1. Completion
 
-h3. File Completion
+h2. File Completion
 
 use <code><C-f></code> to do file-completion (origin is <code><C-x><C-f></code>)
 
-h3. Omni Completion
+h2. Omni Completion
 
 HTML, Javascript, CSS: use <code><tab></code> to do omni-completion. (see next for java)
 
-h3. Java-Completion Support
+h2. Java-Completion Support
 
 use <code><tab></code> to do keyword / auto completion. (only java-base api, by plugin/vjde)
 
 use <code><C-o></code> to do omni completion. (by plugin/javacomplete, origin is <code><C-x><C-o></code>)
 
-h2. Play! Framework Support
+h1. Play! Framework Support
 
 type <code><m><tab></code> will generate model
 
@@ -302,7 +309,7 @@ public class Users extends Controller {
 
 more info in ~/.vim/snippets/java.snippets , ~/.vim/snippets/html.snippets
 
-h2. Learn Vim
+h1. Learn Vim
 
 Visit the following sites to learn more about Vim:
 
@@ -317,19 +324,19 @@ Visit the following sites to learn more about Vim:
 There are many sites teaching Vim, if you know of any other that are easy
 to follow for newcomers, let me know.
 
-h2. Cheat Sheet
+h1. Cheat Sheet
 
 "http://blog.vgod.tw/2009/12/08/vim-cheat-sheet-for-programmers/":http://blog.vgod.tw/2009/12/08/vim-cheat-sheet-for-programmers/
 
 "http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html":http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
 
-h2. TODO
+h1. TODO
 
 "https://github.com/carlhuda/janus":https://github.com/carlhuda/janus
 
 "https://github.com/vgod/vimrc":https://github.com/vgod/vimrc
 
-h2. Credits
+h1. Credits
 
 * Original project and most of the heavy lifting: @scrooloose
 * All the cool plugins for Rails, Cucumber and more: @timpope
