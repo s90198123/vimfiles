@@ -431,8 +431,11 @@ nnoremap <F4> :GundoToggle<CR>
 " NERDTree
 nnoremap <silent> <F5> :NERDTree<CR>
 
+" TagList
+nnoremap <silent> <F6> :TlistToggle<CR>
+
 " Bufexplorer
-nnoremap <silent> <F6> :BufExplorerHorizontalSplit<cr>
+""nnoremap <silent> <F6> :BufExplorerHorizontalSplit<cr>
 map <silent> <F7> :bn<cr>
 map <silent> <F8> :bp<cr>
 ""nnoremap <silent> <F6> :BufExplorer<cr>

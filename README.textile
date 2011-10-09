@@ -217,9 +217,9 @@ set leader key from <code>\</code> to <code>,</code>
 h1. Make Function Key more convenient
 
 <code><F5></code>:NERDTREE
-<code><F6></code>:BufExplorer
-<code><F7></code>:buffernext (origin: <code><leader>bn</code>)
-<code><F8></code>:bufferprev (origin: <code><leader>bp</code>)
+<code><F6></code>:TlistToggle
+<code><F7></code>:bnext (origin: <code><leader>bn</code>)
+<code><F8></code>:bprev (origin: <code><leader>bp</code>)
 <code><F9></code>:YRShow
 <code><F10></code>:YRSearch
 
