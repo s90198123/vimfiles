@@ -101,6 +101,14 @@ source ~/vimfiles/gvimrc
 This way you can override the default GUI configuration by adding your own inside
 this file.
 
+h1. Color Scheme
+
+see more theme in "here":http://www.vi-improved.org/color_sampler_pack/
+
+find <code>colorscheme</code> in <code>~/.vim/vimrc</code> and replace by your favorite theme
+
+reference: "janus#ColorScheme":https://github.com/carlhuda/janus
+
 h1. Help Tags
 
 At first usage of vim, type ":" while in command mode and execute:
