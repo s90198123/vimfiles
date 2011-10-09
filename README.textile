@@ -12,6 +12,7 @@ h1. Bundled Plugins
 * "Align":http://www.vim.org/scripts/script.php?script_id=294 - align blocks of text using equal sign, make comment boxes and more
 * "AutoJump":https://github.com/trotter/autojump.vim - Adds autojump support to vim
 * "bufexplorer":http://www.vim.org/scripts/script.php?script_id=42 - manage your file buffers
+* "buftabs":https://github.com/vim-scripts/buftabs - Minimalistic buffer tabs saving screen space
 * "Command-T":http://www.vim.org/scripts/script.php?script_id=3025 - the fastest and most intuitive way for opening files in your project
 * "cucumber":http://www.vim.org/scripts/script.php?script_id=2973 - support for cucumber features such as syntax highlight, indentation, etc
 * "endwise":http://www.vim.org/scripts/script.php?script_id=2386 - support to close Ruby blocks such as 'if', 'do' with 'end'
