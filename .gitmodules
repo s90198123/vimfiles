@@ -166,3 +166,6 @@
 [submodule "bundle/autojump.vim"]
 	path = bundle/autojump.vim
 	url = https://github.com/trotter/autojump.vim.git
+[submodule "bundle/bufftabs"]
+	path = bundle/bufftabs
+	url = https://github.com/vim-scripts/buftabs.git
