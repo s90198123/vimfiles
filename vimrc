@@ -257,7 +257,7 @@ nmap <leader>/ :nohl<CR>"
 " Color scheme, term color and font setting
     " global setting
     set t_Co=256
-    colorscheme wombat256
+    colorscheme candycode
     set cursorline        " highlight current line"
 if has("gui_running")
     "tell the term has 256 colors
