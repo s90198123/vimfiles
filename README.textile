@@ -350,15 +350,23 @@ h1. TODO
 
 h1. Yes! We need your help to make it better
 
+We want to offer a better, useful, and modern vim for newer, just like a ide or a powerful text-editor, but the origin vim is lack of many advanced features, and without some awesome plugins, so we create this project. And we want to follow the rule "DRY: Don't Repeat Youself":http://en.wikipedia.org/wiki/Don%27t_repeat_yourself , and "KISS: Keep It Simple & Stupid":http://en.wikipedia.org/wiki/KISS_principle
+
+As you see this project, we have a lot of Issues and many unknown and awesome Plugins in Future. We need Volunteers to help, like disscusing or answering with issues, writing doc, find more useful plugins, and test plugins, and so on.
+
 h2. How to make it better?
 
-* Create a issue for suggestion: like improving vimrc setting, or add awesome plugin and so on
+* Create issues for suggestion: like improving vimrc setting, or add awesome plugin and so on
+
+* Test Plugin and Talk about your experience with it
+
+* Join the issue comment
 
 * Solve issue: fork this project and create branch to solve issue, then you can send pull request, we will merge it asap.
 
 * Write Document or Wiki
 
-finally, thank for your help :)
+PS. we will pretty thank for your help:)
 
 h1. Credits
 
