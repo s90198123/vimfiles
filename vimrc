@@ -300,9 +300,6 @@ endif
 " else in your ~/.vimrc file, such as:
 " nmap <silent> <Leader>q <Plug>PeepOpen
 
-silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
-nnoremap <silent> <C-f> :call FindInNERDTree()<CR>
-
 "make <c-l> clear the highlight as well as redraw
 nnoremap <C-L> :nohls<CR><C-L>
 inoremap <C-L> <C-O>:nohls<CR>
@@ -429,7 +426,9 @@ inoremap <C-O>             <C-X><C-O>
 nnoremap <F4> :GundoToggle<CR>
 
 " NERDTree
-nnoremap <silent> <F5> :NERDTree<CR>
+nnoremap <silent> <F5> :NERDTreeToggle<CR>
+"silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
+"nnoremap <silent> <C-f> :call FindInNERDTree()<CR>
 
 " TagList
 nnoremap <silent> <F6> :TlistToggle<CR>
