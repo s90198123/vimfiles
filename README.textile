@@ -3,8 +3,8 @@ h1. Vim
 It is recommended that you use gVim in either Windows or Linux and MacVim for
 Mac. Download from:
 
-* (Windows) http://www.vim.org/download.php#pc (gvim73_46.exe)
-* (Mac) https://github.com/b4winckler/macvim/downloads (snapshot-56)
+* "Vim for Windows - gvim73_46.exe":http://www.vim.org/download.php#pc
+* "Vim for Mac - macvim snapshot-56":https://github.com/b4winckler/macvim/downloads
 
 h1. Bundled Plugins
 
@@ -323,8 +323,6 @@ h1. Learn Vim
 
 Visit the following sites to learn more about Vim:
 
-* "Vimcasts":http://vimcasts.org
-
 * "Learn Vim Progressively":http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/
 
 * "Learn Vim Progressively for CN":http://coolshell.cn/articles/5426.html
@@ -332,6 +330,8 @@ Visit the following sites to learn more about Vim:
 * "Search and replace for CN":http://greenisland.csie.nctu.edu.tw/wp/2005/09/02/302/
 
 * "Vim Introduction and Tutorial":http://blog.interlinked.org/tutorials/vim_tutorial.html
+
+* "Vimcasts":http://vimcasts.org
 
 There are many sites teaching Vim, if you know of any other that are easy
 to follow for newcomers, let me know.
@@ -347,6 +347,18 @@ h1. TODO
 "https://github.com/carlhuda/janus":https://github.com/carlhuda/janus
 
 "https://github.com/vgod/vimrc":https://github.com/vgod/vimrc
+
+h1. Yes! We need your help to make it better
+
+h2. How to make it better?
+
+* Create a issue for suggestion: like improving vimrc setting, or add awesome plugin and so on
+
+* Solve issue: fork this project and create branch to solve issue, then you can send pull request, we will merge it asap.
+
+* Write Document or Wiki
+
+finally, thank for your help :)
 
 h1. Credits
 
