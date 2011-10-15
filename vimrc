@@ -431,8 +431,8 @@ nnoremap <silent> <F5> :NERDTreeToggle<CR>
 "silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
 "nnoremap <silent> <C-f> :call FindInNERDTree()<CR>
 
-" TagList
-nnoremap <silent> <F6> :TlistToggle<CR>
+" TagBar
+nnoremap <silent> <F6> :TagbarToggle<CR>
 
 " Bufexplorer
 ""nnoremap <silent> <F6> :BufExplorerHorizontalSplit<cr>
