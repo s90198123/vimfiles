@@ -140,9 +140,6 @@
 [submodule "bundle/vim-rvm"]
 	path = bundle/vim-rvm
 	url = git://github.com/tpope/vim-rvm.git
-[submodule "bundle/vjde"]
-	path = bundle/vjde
-	url = https://github.com/cespare/vjde.git
 [submodule "bundle/vim-easymotion"]
 	path = bundle/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
@@ -164,9 +161,6 @@
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
 	url = https://github.com/Shougo/neocomplcache.git
-[submodule "bundle/vim-addon-mw-utils"]
-	path = bundle/vim-addon-mw-utils
-	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar
