@@ -177,16 +177,16 @@ snippet cb
 	static void checkAuthentification() {
 		if(session.get("user") == null) login();
 	}
-snippet bs
+snippet bp
 	@PrePersist
-snippet bsdef
+snippet bpdef
 	@PrePersist
 	void ${1: onPrePersist}() {
 	  ${2}
 	}
-snippet as
+snippet ap
 	@PostPersist
-snippet asdef
+snippet apdef
 	@PostPersist
 	void ${1: onPostPersist}(){
 	  ${2}
