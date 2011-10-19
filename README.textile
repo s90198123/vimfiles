@@ -324,7 +324,7 @@ or if keyword match the snippet pattern, you can type <code><TAB></code> to do o
 
 h2. Alternative plugin
 
-if don't like this plugin, can use 'SnipMate' to replace it, and it can work well with 'vjde', but neocomplcache can't.
+if don't like this plugin, can use 'SuperTab' to replace it, and it can work well with 'vjde', but neocomplcache can't.
 
 h3. File Completion
 
