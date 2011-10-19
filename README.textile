@@ -72,18 +72,19 @@ Troubleshoot: Because of the large amount of submodules, if you ever have any
 trouble after pulling from the repository, it will be easier to just back up
 your old .vim folder and just git clone a new version.
 
+h2. Linux and Mac
+
 Clone this repo into your home directory either as <code>.vim</code> (linux/mac) or
 <code>vimfiles</code> (Windows). Such as:
-
-h2. Linux and Mac
 
 <pre><code>
 git clone git://github.com/s90198123/vimfiles.git ~/.vim
 </pre></code>
 
-then 'cd' into the repo and run this to get the snippets submodule:
+run this to get the snippets submodule:
 
 <pre><code>
+cd ~/.vim
 git submodule update --init
 </code></pre>
 
@@ -104,13 +105,17 @@ echo "source ~/.vim/gvimrc" > ~/.gvimrc
 
 h2. Windows
 
+Clone this repo into your home directory either as <code>.vim</code> (linux/mac) or
+<code>vimfiles</code> (Windows). Such as:
+
 <pre><code>
 git clone git://github.com/s90198123/vimfiles.git ~/vimfiles
 </pre></code>
 
-then 'cd' into the repo and run this to get the snippets submodule:
+run this to get the snippets submodule:
 
 <pre><code>
+cd ~/vimfiles
 git submodule update --init
 </code></pre>
 
@@ -258,11 +263,13 @@ git pull
 git submodule upgrade --init
 </code></pre>
 
-h1. Customize Vim leader key
+h1. Vim Customize map key
+
+h2. Leader key
 
 set leader key from <code>\</code> to <code>,</code>
 
-h1. Make Function Key more convenient
+h2. Make Function Key more convenient
 
 <code><F5></code>:NERDTREE
 <code><F6></code>:TagbarToggle
@@ -271,7 +278,7 @@ h1. Make Function Key more convenient
 <code><F9></code>:YRShow
 <code><F10></code>:YRSearch
 
-h1. Add Snippets
+h1. Plugin: SnipMate
 
 h2. Where is the snippets?
 
@@ -299,17 +306,35 @@ snippet div
 
 you can reference more in ~/.vim/snippets/
 
-h1. Completion
+h1. Plugin: Neocomplcache
 
-h2. File Completion
+To read doc about this plugin usage, type following commands.
+
+<pre>
+<code>
+  :help neocomplcache
+</code>
+</pre>
+
+h2. Usage
+
+when keyword match the pattern, it will pop a menu, then use <code><C-N></code> and <code><C-P></code> to select next or prev, type <code><C-K></code> to confirm your selection.
+
+or if keyword match the snippet pattern, you can type <code><TAB></code> to do omni-completion, when enter snippet-completion mode, do same as prev step.
+
+h2. Alternative plugin
+
+if don't like this plugin, can use 'SnipMate' to replace it, and it can work well with 'vjde', but neocomplcache can't.
+
+h3. File Completion
 
 use <code><C-f></code> to do file-completion (origin is <code><C-x><C-f></code>)
 
-h2. Omni Completion
+h3. Omni Completion
 
 HTML, Javascript, CSS: use <code><tab></code> to do omni-completion. (see next for java)
 
-h2. Java-Completion Support
+h3. Java-Completion Support
 
 use <code><tab></code> to do keyword / auto completion. (only java-base api, by plugin/vjde)
 
