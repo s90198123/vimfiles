@@ -25,7 +25,7 @@ h2. Util
 h2. Explorer and Buffer
 
 * "bufexplorer":https://github.com/vim-scripts/bufexplorer.zip - manage your file buffers
-* "buftabs":https://github.com/vim-scripts/buftabs - Minimalistic buffer tabs saving screen space
+* "minibufexpl":https://github.com/fholgado/minibufexpl.vim - Elegant buffer explorer - takes very little screen space
 * "NERD_commenter":http://www.vim.org/scripts/script.php?script_id=1218 - support to comment lines of code
 * "NERD_tree":https://github.com/vim-scripts/The-NERD-tree - project pane that you can open with [leader] p
 * "taglist":https://github.com/vim-scripts/taglist.vim - Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc)
@@ -269,17 +269,17 @@ h2. Leader key and Navigation
 
 <pre>
   <code>
-    let mapleader=","
-    let g:mapleader=","
+let mapleader=","
+let g:mapleader=","
   </code>
 </pre>
 
 <pre>
   <code>
-    map <C-h> <C-w>h
-    map <C-j> <C-w>j
-    map <C-k> <C-w>k
-    map <C-l> <C-w>l
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
   </code>
 </pre>
 
@@ -287,10 +287,10 @@ h2. Buffer Navigation
 
 <pre>
   <code>
-    map <silent> gB :bp<cr>
-    map <silent> gb :bn<cr>
-    map <silent> g0 :bf<cr>
-    map <silent> g$ :bl<cr>
+map <silent> gB :bp<cr>
+map <silent> gb :bn<cr>
+map <silent> g0 :bf<cr>
+map <silent> g$ :bl<cr>
   </code>
 </pre>
 
@@ -298,20 +298,20 @@ h2. Plugins
 
 <pre>
   <code>
-    nnoremap <F4> :GundoToggle<CR>
-    nnoremap <leader>u :GundoToggle<CR>
+nnoremap <F4> :GundoToggle<CR>
+nnoremap <leader>u :GundoToggle<CR>
 
-    nnoremap <silent> <F5> :NERDTreeToggle<CR>
-    nnoremap <silent> <leader>g :NERDTreeToggle<CR>
+nnoremap <silent> <F5> :NERDTreeToggle<CR>
+nnoremap <silent> <leader>g :NERDTreeToggle<CR>
 
-    nnoremap <silent> <F6> :TagbarToggle<CR>
-    nnoremap <silent> <leader>tb :TagbarToggle<CR>
+nnoremap <silent> <F6> :TagbarToggle<CR>
+nnoremap <silent> <leader>tb :TagbarToggle<CR>
 
-    nnoremap <silent> <F9> :YRShow<cr>
-    nnoremap <silent> <leader>y :YRShow<cr>
+nnoremap <silent> <F9> :YRShow<cr>
+nnoremap <silent> <leader>y :YRShow<cr>
 
-    nnoremap <silent> <F10> :YRSearch<cr>
-    nnoremap <silent> <Leader>gy :YRSearch<cr>
+nnoremap <silent> <F10> :YRSearch<cr>
+nnoremap <silent> <Leader>gy :YRSearch<cr>
   </code>
 </pre>
 
@@ -433,6 +433,8 @@ Visit the following sites to learn more about Vim:
 * "Vim Introduction and Tutorial":http://blog.interlinked.org/tutorials/vim_tutorial.html
 
 * "Vimcasts":http://vimcasts.org
+
+* "Learn Vimscript the Hard Way":http://learnvimscriptthehardway.stevelosh.com/
 
 There are many sites teaching Vim, if you know of any other that are easy
 to follow for newcomers, let me know.
