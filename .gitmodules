@@ -155,9 +155,6 @@
 [submodule "bundle/autojump.vim"]
 	path = bundle/autojump.vim
 	url = https://github.com/trotter/autojump.vim.git
-[submodule "bundle/bufftabs"]
-	path = bundle/bufftabs
-	url = https://github.com/vim-scripts/buftabs.git
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
 	url = https://github.com/Shougo/neocomplcache.git
@@ -170,3 +167,6 @@
 [submodule "bundle/vim-snipmate"]
 	path = bundle/vim-snipmate
 	url = https://github.com/akitaonrails/snipmate.vim.git
+[submodule "bundle/vim-minibufexpl"]
+	path = bundle/vim-minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git

@@ -265,18 +265,48 @@ git submodule upgrade --init
 
 h1. Vim Customize map key
 
-h2. Leader key
+h2. Leader key and Navigation
 
-set leader key from <code>\</code> to <code>,</code>
+<code>
+  let mapleader=","
+  let g:mapleader=","
+</code>
 
-h2. Make Function Key more convenient
+<code>
+  map <C-h> <C-w>h
+  map <C-j> <C-w>j
+  map <C-k> <C-w>k
+  map <C-l> <C-w>l
+</code>
 
-<code><F5></code>:NERDTREE
-<code><F6></code>:TagbarToggle
-<code><F7></code>:bnext
-<code><F8></code>:bprev
-<code><F9></code>:YRShow
-<code><F10></code>:YRSearch
+
+h2. Buffer Navigation
+
+<code>
+  map <silent> gB :bp<cr>
+  map <silent> gb :bn<cr>
+  map <silent> g0 :bf<cr>
+  map <silent> g$ :bl<cr>
+</code>
+
+h2. Plugins
+
+<code>
+  nnoremap <F4> :GundoToggle<CR>
+  nnoremap <leader>u :GundoToggle<CR>
+
+  nnoremap <silent> <F5> :NERDTreeToggle<CR>
+  nnoremap <silent> <leader>g :NERDTreeToggle<CR>
+
+  nnoremap <silent> <F6> :TagbarToggle<CR>
+  nnoremap <silent> <leader>tb :TagbarToggle<CR>
+
+  nnoremap <silent> <F9> :YRShow<cr>
+  nnoremap <silent> <leader>y :YRShow<cr>
+
+  nnoremap <silent> <F10> :YRSearch<cr>
+  nnoremap <silent> <Leader>gy :YRSearch<cr>
+</code>
 
 h1. Plugin: SnipMate
 

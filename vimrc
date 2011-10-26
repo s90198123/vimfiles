@@ -300,26 +300,29 @@ inoremap <C-O>             <C-X><C-O>
 
 " Gundo
 nnoremap <F4> :GundoToggle<CR>
+nnoremap <leader>u :GundoToggle<CR>
 
 " NERDTree
 nnoremap <silent> <F5> :NERDTreeToggle<CR>
+nnoremap <silent> <leader>g :NERDTreeToggle<CR>
 "silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
 "nnoremap <silent> <C-f> :call FindInNERDTree()<CR>
 
 " TagBar
 nnoremap <silent> <F6> :TagbarToggle<CR>
+nnoremap <silent> <leader>tb :TagbarToggle<CR>
 
 " Bufexplorer
-""nnoremap <silent> <F6> :BufExplorerHorizontalSplit<cr>
-map <silent> <F7> :bn<cr>
-map <silent> <F8> :bp<cr>
-""nnoremap <silent> <F6> :BufExplorer<cr>
-""nnoremap <silent> <F7> :BufExplorerHorizontalSplit<cr>
-""nnoremap <silent> <F8> :BufExplorerVerticalSplit<cr>
+map <silent> gB :bp<cr>
+map <silent> gb :bn<cr>
+map <silent> g0 :bf<cr>
+map <silent> g$ :bl<cr>
 
 " YankRing
 nnoremap <silent> <F9> :YRShow<cr>
+nnoremap <silent> <leader>y :YRShow<cr>
 nnoremap <silent> <F10> :YRSearch<cr>
+nnoremap <silent> <Leader>gy :YRSearch<cr>
 
 "key mapping for saving file
 nmap <C-s> :w<CR>
