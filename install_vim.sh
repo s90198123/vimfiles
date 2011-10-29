@@ -22,7 +22,7 @@ git submodule update --init
 echo "source ~/.vim/vimrc" > ~/.vimrc
 echo "source ~/.vim/gvimrc" > ~/.gvimrc
 
-cd ~/.vim/bundle/command-t/ruby/command-t
+cd ~/.vim/bundle/Command-T/ruby/command-t
 (ruby extconf.rb && make) || warn "Can't compile Command-T."
 
 echo "vimrc is installed."
