@@ -74,34 +74,12 @@ your old .vim folder and just git clone a new version.
 
 h2. Linux and Mac
 
-Clone this repo into your home directory either as <code>.vim</code> (linux/mac) or
-<code>vimfiles</code> (Windows). Such as:
+use command 'curl'
+<pre> <code> curl -o - https://raw.github.com/s90198123/vimfiles/master/install.sh | sh </code> </pre>
 
-<pre><code>
-git clone git://github.com/s90198123/vimfiles.git ~/.vim
-</pre></code>
+or 'wget'
+<pre> <code> wget -O - https://raw.github.com/s90198123/vimfiles/master/install.sh | sh </code> </pre>
 
-run this to get the snippets submodule:
-
-<pre><code>
-cd ~/.vim
-git submodule update --init
-</code></pre>
-
-Now you should create a new <tt>.vimrc</tt> file in your home directory that
-loads the pre-configured one that comes bundled in this package. You can do it
-on Linux/Mac like this:
-
-<pre><code>
-echo "source ~/.vim/vimrc" > ~/.vimrc
-</code></pre>
-
-You should also create a new <tt>.gvimrc</tt> file in your home directory. You can do
-it on Linux/Mac like this:
-
-<pre><code>
-echo "source ~/.vim/gvimrc" > ~/.gvimrc
-</code></pre>
 
 h2. Windows
 
