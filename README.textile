@@ -75,10 +75,10 @@ your old .vim folder and just git clone a new version.
 h2. Linux and Mac
 
 use command 'curl'
-<pre> <code> curl -o - https://raw.github.com/s90198123/vimfiles/master/install.sh | sh </code> </pre>
+<pre> <code> curl -o - https://raw.github.com/s90198123/vimfiles/master/install_vim.sh | sh </code> </pre>
 
 or 'wget'
-<pre> <code> wget -O - https://raw.github.com/s90198123/vimfiles/master/install.sh | sh </code> </pre>
+<pre> <code> wget -O - https://raw.github.com/s90198123/vimfiles/master/install_vim.sh | sh </code> </pre>
 
 
 h2. Windows
