@@ -170,3 +170,6 @@
 [submodule "bundle/vim-minibufexpl"]
 	path = bundle/vim-minibufexpl
 	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule "bundle/snipmate-snippets"]
+	path = bundle/snipmate-snippets
+	url = https://s90198123@github.com/s90198123/snipmate-snippets.git
