@@ -19,6 +19,7 @@ h2. Util
 * "supertab":https://github.com/vim-scripts/SuperTab - pseudo auto-complete with tab
 * "surround":https://github.com/vim-scripts/surround.vim - add, change, remove surrounding parentheses, brackets, quotes, etc
 * "vim-snipmate":https://github.com/akitaonrails/snipmate.vim - support for textmate-like snippets for several languages
+* "snipmate-snippets":https://github.com/s90198123/snipmate-snippets - vim-snipmate default snippets
 * "vim-easymotion":http://www.vim.org/scripts/script.php?script_id=3526 - Vim motions on speed!
 * "yankring":https://github.com/vim-scripts/YankRing.vim - Maintains a history of previous yanks, changes and deletes
 
