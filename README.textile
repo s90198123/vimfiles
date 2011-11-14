@@ -278,6 +278,8 @@ h2. Plugins
 
 <pre>
   <code>
+nnoremap <CR> :CommandT<CR>
+
 nnoremap <F4> :GundoToggle<CR>
 nnoremap <leader>u :GundoToggle<CR>
 

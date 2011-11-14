@@ -298,6 +298,9 @@ inoremap <C-D>             <C-X><C-D>
 inoremap <C-L>             <C-X><C-L>
 inoremap <C-O>             <C-X><C-O>
 
+" CommandT
+nnoremap <CR> :CommandT<CR>
+
 " Gundo
 nnoremap <F4> :GundoToggle<CR>
 nnoremap <leader>u :GundoToggle<CR>
