@@ -30,6 +30,7 @@ h2. Explorer and Buffer
 * "NERD_tree":https://github.com/vim-scripts/The-NERD-tree - project pane that you can open with [leader] p
 * "taglist":https://github.com/vim-scripts/taglist.vim - Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc)
 * "tagbar":https://github.com/majutsushi/tagbar - Vim plugin that displays tags in a window, ordered by class etc.
+* "status":https://github.com/dickeytk/status.vim - Better status bar.
 
 h2. ruby
 
