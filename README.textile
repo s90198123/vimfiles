@@ -416,6 +416,8 @@ Visit the following sites to learn more about Vim:
 
 * "Vimcasts":http://vimcasts.org
 
+* "Vim: revisited":http://mislav.uniqpath.com/2011/12/vim-revisited/
+
 * "Learn Vimscript the Hard Way":http://learnvimscriptthehardway.stevelosh.com/
 
 There are many sites teaching Vim, if you know of any other that are easy
