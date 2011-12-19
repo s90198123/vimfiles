@@ -425,9 +425,11 @@ to follow for newcomers, let me know.
 
 h1. Cheat Sheet
 
-"http://blog.vgod.tw/2009/12/08/vim-cheat-sheet-for-programmers/":http://blog.vgod.tw/2009/12/08/vim-cheat-sheet-for-programmers/
+* "Vgod: Vim cheat sheet for programmers":http://blog.vgod.tw/2009/12/08/vim-cheat-sheet-for-programmers/
 
-"http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html":http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
+* "Vim Cheat Sheet and Tutorial":http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
+
+* "Vim Shortcut Wallpaper":https://github.com/LevelbossMike/vim_shortcut_wallpaper
 
 h1. TODO
 
