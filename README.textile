@@ -414,6 +414,8 @@ Visit the following sites to learn more about Vim:
 
 * "Vim Introduction and Tutorial":http://blog.interlinked.org/tutorials/vim_tutorial.html
 
+* "Vim Text Objects: The Definitive Guide":http://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/
+
 * "Vimcasts":http://vimcasts.org
 
 * "Vim: revisited":http://mislav.uniqpath.com/2011/12/vim-revisited/
