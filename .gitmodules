@@ -161,9 +161,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar
-[submodule "bundle/status"]
-	path = bundle/status
-	url = https://github.com/dickeytk/status.vim.git
 [submodule "bundle/vim-snipmate"]
 	path = bundle/vim-snipmate
 	url = https://github.com/akitaonrails/snipmate.vim.git
