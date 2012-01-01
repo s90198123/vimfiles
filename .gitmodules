@@ -170,3 +170,6 @@
 [submodule "bundle/snipmate-snippets"]
 	path = bundle/snipmate-snippets
 	url = https://s90198123@github.com/s90198123/snipmate-snippets.git
+[submodule "bundle/vim-statline"]
+	path = bundle/vim-statline
+	url = https://github.com/millermedeiros/vim-statline.git
